@@ -1,0 +1,69 @@
+{
+	"name": "@titanium/googlesignin",
+	"version": "0.0.1",
+	"description": "Native modules that allows you to use the Google Sign-in SDK with Axway Titanium native mobile apps.",
+	"main": "index.js",
+	"scripts": {
+		"list": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
+		"postinstall": "tiapp-install-module",
+		"postuninstall": "tiapp-uninstall-module",
+		"test": "npm install --ignore-scripts && npm run list",
+		"prepublishOnly2": "git pull && bump"
+	},
+	"author": {
+		"name": "Hans Knoechel"
+	},
+	"maintainers": [
+		{
+			"name": "Brenton House",
+			"email": "brenton.house@gmail.com",
+			"url": "https://brenton.house"
+		}
+	],
+	"repository": {
+		"type": "git",
+		"url": "github:brentonhouse/titanium-googlesignin"
+	},
+	"license": "Apache-2.0",
+	"bugs": {
+		"url": "https://github.com/brentonhouse/titanium-googlesignin/issues"
+	},
+	"homepage": "https://github.com/brentonhouse/titanium-googlesignin#readme",
+	"keywords": [
+		"titanium",
+		"mobile",
+		"alloy",
+		"turbo",
+		"axway",
+		"appcelerator",
+		"ios",
+		"android",
+		"iphone",
+		"ipad",
+		"googlesignin",
+		"titanium-native-module",
+		"brenton-house"
+	],
+	"titanium": {
+		"type": "native-module",
+		"platform": {
+			"ios": {
+				"moduleid": "ti.googlesignin",
+				"name": "ti.googlesignin",
+				"version": "3.0.0",
+				"apiversion": 2,
+				"architectures": [
+					"armv7",
+					"arm64",
+					"i386",
+					"x86_64"
+				],
+				"minsdk": "8.2.0",
+				"guid": "7fa817c2-5c36-402b-a442-f2cafd41da64"
+			}
+		}
+	},
+	"dependencies": {
+		"@titanium/tiapp-xml": ">=0.9.5"
+	}
+}
