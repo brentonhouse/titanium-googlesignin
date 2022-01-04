@@ -1,14 +1,14 @@
 {
 	"name": "@titanium/googlesignin",
-	"version": "0.0.1",
-	"description": "Native modules that allows you to use the Google Sign-in SDK with Axway Titanium native mobile apps.",
+	"version": "1.0.1",
+	"description": "Axway Amplify module for using Google Sign-in with Appcelerator Titanium apps",
 	"main": "index.js",
 	"scripts": {
 		"list": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
 		"postinstall": "tiapp-install-module",
 		"postuninstall": "tiapp-uninstall-module",
 		"test": "npm install --ignore-scripts && npm run list",
-		"prepublishOnly2": "git pull && bump"
+		"prepublishOnly": "git pull && bump insane"
 	},
 	"author": {
 		"name": "Hans Knoechel"
@@ -28,7 +28,7 @@
 	"bugs": {
 		"url": "https://github.com/brentonhouse/titanium-googlesignin/issues"
 	},
-	"homepage": "https://github.com/brentonhouse/titanium-googlesignin#readme",
+	"homepage": "https://brenton.house/saying-goodbye-to-axway-amplify-titanium-31a44f3671de",
 	"keywords": [
 		"titanium",
 		"mobile",
@@ -40,6 +40,12 @@
 		"android",
 		"iphone",
 		"ipad",
+		"plugin",
+		"amplify",
+		"api-builder",
+		"titanium-sdk",
+		"axway-sdk",
+		"axway-amplify",
 		"googlesignin",
 		"titanium-native-module",
 		"brenton-house"
