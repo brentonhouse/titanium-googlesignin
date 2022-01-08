@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/googlesignin",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"description": "⭐  Axway Amplify module for using Google Sign-in with Appcelerator Titanium SDK Framework",
 	"main": "index.js",
 	"scripts": {
